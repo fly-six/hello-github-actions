@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box1{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			.box2{
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+				/*定位，通过定位可以任意的摆放元素
+				  -通过position属性来设置元素定位
+				    -可选值：
+				         static：默认值，元素没有开启定位
+				         relative：开启相对定位
+				         absolute：开启绝对定位
+				         fixed：开启元素的固定定位（一种特殊绝对定位）*/
+				         /*5.粘性定位  position: sticky;  top 0*/
+				        /*当元素的position属性设置为relative时，则开启了元素的相对定位
+				         1.当开启了元素的相对定位以后，而不设置偏移量时，元素则不会发生任何变化
+				         2.相对定位是相对于原来的位置进行定位
+				         3.相对定位不会脱离文档流
+				         4.相对定位会使元素提升一个层级
+				         5.相对定位不会改变性质，块还是块，内联还是内联*/
+				       position: relative;
+				       left: 200px;
+				       top: 200px;
+				       /*当开启了元素定位(非static的值)时
+				        可以通过left right top bottom四个属性来设置元素的偏移量*/
+				       
+				       
+			}
+			.box3{
+				width: 200px;
+				height: 200px;
+				background-color: yellowgreen;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</body>
+</html>

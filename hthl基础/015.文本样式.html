@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>文本样式</title>
+		<style type="text/css">
+			/*text-transform可以用来设置文本大小写
+			  可选值：
+			     none  默认值，该怎么显示就怎么显示，不做任何处理
+			     capitalize 单词首字母大写，通过空格识别单词
+			     uppercase 所有的字母都大写
+			     lowercase 所有字母都小写
+			     */
+		.p1{
+			text-transform: lowercase;
+		}
+		
+		.p2{
+			/*text-decoration可以用来设置文本修饰
+			 可选值：
+			     none 默认值，不添加任何修饰，正常显示
+			     underline 下划线
+			     overline  上划线
+			     line-through 为文本添加删除线*/
+			/*text-decoration: none;*/
+			text-decoration: underline red dotted;
+		}
+		.p3{
+			/*
+			 * letter-spacing可以指定字符间距
+			 * letter-spacing: 10px;
+			 */
+			
+			/*word-spacing 设置单词之间的距离，实际上就是单词之间空格的大小
+			 * word-spacing: 120px;*/
+		}
+		.p4{
+			/*text-align 用于设置文本的排列方式
+			 可选值：
+			     left 默认值，文本左对齐
+			     right 文本靠右对齐
+			     center 文本居中
+			     justify 两端对齐*/
+			text-align: center;
+		}
+		.p5{
+			/*text-indent用来首行缩进，正值向右，负值向左*/
+			text-indent: -9999px;	
+			vertical-align: -23px;
+			/* vertical-align: baseline;
+			 		可选值：
+			 			baseline  默认值，基线对齐
+			 			top 顶端对齐
+			 			bottom 底部对齐
+			 			middle 居中对齐
+			 			还可以设置像素*/
+			 			
+		}
+		.box1{
+			/*white-space 设置网页如何处理空白
+			 * 	可选值
+			 * 		normal 正常
+			 * 		nowrap 不换行
+			 * 		pre 保留空白
+			 */
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<p class="p2">今天天气正好</p>
+	</body>
+</html>

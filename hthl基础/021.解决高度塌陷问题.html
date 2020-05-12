@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>高度塌陷问题</title>
+		<style type="text/css">
+			/*根据w3c标椎，在页面中元素都是一个隐含的属性叫做block(块) formatting(格式化) context(环境)
+			 当开启元素的BFC以后，元素将会具有如下特性：
+			   1.父元素的垂直外边距不会和子元素重叠
+			   2.开启BFC的元素不会被浮动元素所覆盖
+			   3.开启BFC元素可以包含浮动的子元素
+			    
+			如何开启BFC
+			  1.设置元素浮动
+			  2.设置元素绝对定位
+			  3.设置元素为inline-block
+			     -可以解决问题，但会导致宽度丢失，不推荐使用这种方式
+			  4.将元素的overflow设置一个非visible的值*/
+			/*推荐解决方法：将overflow设置为hidden是副作用最小的BFC方式
+			 */
+	    .box1{
+	    	border: 10px red solid;
+	    	overflow: hidden;
+	    }
+	    .box2{
+	    	width: 100px;
+	    	height: 100px;
+	    	background-color: blue;
+	    	float: left;
+	    	
+	    }
+	    .box3{
+	    	height: 100px;
+	    	background-color: yellow;
+	    	
+	    }
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+		    <div class="box2"></div>
+		</div>
+		<div class="box3"></div>
+	</body>
+</html>

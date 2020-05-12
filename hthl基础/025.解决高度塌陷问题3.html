@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box1{
+				border: 1px solid red;
+			}
+			.box2{
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				float: left;
+			}
+			/*解决高度塌陷问题方案三
+			   通过after伪类，选中box1的后面在加一个空白的块元素，然后对其清除浮动，不会在页面中添加多余的div，最推荐使用，几乎没有副作用
+			   */
+			.clearfix:after{
+				/*添加一个内容*/
+				content: "";
+				/*转换为一个块元素*/
+				display: block;
+				/*清除两侧浮动*/
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1 clearfix">
+			<div class="box2"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪元素</title>
+		<style type="text/css">
+			/*使用伪元素来表示元素中的一些特殊位置*/
+			/*为p标签中的第一个字符来设置一个特殊的样式*/
+			p:first-letter{
+				color: red;
+				font-size: 20px;
+			}
+			/*为p中的第一行设置一个背景颜色为黄色*/
+			p:first-line{
+				background-color: yellow;
+			}
+			/*before表示元素最前边的部分
+			 一般before都需要结合content这个样式一起使用
+			 通过content可以向before或after的位置添加一些内容
+			 */
+			p:before{
+				content: "我会出现在整个段落的最前边，可以添加颜色，不可以被选中";
+			}
+			p:after{
+				content: "我会出现在整个段落的最后边，可以添加颜色，不可以被选中";
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<p>是一个段落伤筋动骨恢复规划从古到今共和国成功过进口国的海上发挥机电公司巨化股份电视广告单缸发动机省开封公交卡嘎低合金钢风景嘎后打扫分类的划分成绩的合格反间谍法高科技的风格郭富城北方人</p>
+	</body>
+</html>

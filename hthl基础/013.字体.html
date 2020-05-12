@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>字体</title>
+		<style type="text/css">
+			
+	    .p1{
+	    	/*设置一个文字大小*/
+	    	font-size: 50px;
+	    	/*设置一个字体*/
+	    	font-family: 华文彩云;
+	    	/*设置文字斜体*/
+	    	font-style: italic;
+	    	/*设置文字加粗*/
+	    	font-weight: bold;
+	    	/*设置一个小型大写字母*/
+	    	font-variant: small-caps;
+	    }
+	    .p2{
+	    	/*css样式中为我们提供了一种样式叫font,
+	    	 使用该样式可以同时设置字体相关的所有样式
+	    	 可以将字体样式的值，统一写在font样式中，不同值使用样式隔开
+	    	 使用font设置字体样式时，斜体、加粗、大小字母、没有顺序要求，甚至可写可不写，如果不写则使用默认值
+	    	 大小必须写在倒数第二个，字体必须写在倒数第一个
+	    	 大小和字体缺一不可，连写解析更快*/
+	    	font: italic bold small-caps 50px "微软雅黑";
+	    }
+		</style>
+	</head>
+	<body>
+		<p class="p1">abcdefg</p>
+		<p class="p2">abcdefg</p>
+		
+	</body>
+</html>

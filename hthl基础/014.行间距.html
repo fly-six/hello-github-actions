@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>行高</title>
+		<style type="text/css">
+		 .p1{
+		 	/*行高类似于我们上学单线本，单线本是一行一行，线与线之间的距离就是行高，网页中的文字实际上也是写在一个看不见的线中的，而文字会默认在行高中垂直居中显示
+		 	 
+		 	 * 行间距=行高-字体大小*/
+		 	font-size: 10px;
+		 	/*通过设置line-height可以间接设置行高
+		 	 可以接收的值：
+		 	   1，直接接收一个大小
+		 	   2，可以接收百分比，则会相对于字体计算行高
+		 	   3.可以直接传一个数值，则行高会设置字体大小相应的倍数*/
+		 	/*line-height: 20px;*/
+		 	line-height: 200%;
+		 	line-height: 2;
+		 }
+		 /*在font中也可以指定行高，30px是字体大小，50是行高，行高最好加上，或者写在font是下面，不然会被默认样式覆盖*/
+		.p2{
+			font: 30px/50px "微软雅黑";
+			line-height: 50px;
+		}
+		</style>
+	</head>
+	<body>
+	</body>
+</html>

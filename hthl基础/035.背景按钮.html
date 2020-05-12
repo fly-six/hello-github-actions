@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.btn{
+				display: block;
+				width: 300px;
+				height: 200px;
+				background-image: url(img/btn2.png);
+				background-repeat: no-repeat;
+				margin: 50px auto;
+			}
+			.btn:hover{
+				background-position: -300px 0px;
+				/*background-image: url(img/yj.jpg);*/
+				}
+		    .btn:active{
+		    	background-position: -600px 0px;
+		    	/*background-image: url(img/hb.jpg);*/
+		    /*加载hover和active时，浏览器请求加载图片，会有时间差，有白边闪烁，解决方法，把图片整合在一起，使用background-position、来切换要显示图片的位置，这种技术叫做图片整合技术（css+sprite），雪碧图*/
+		    }
+
+			
+		</style>
+	</head>
+	<body>
+
+		<div>
+		<a class="btn" href="#"></a>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--在IE6中对图片格式png24支持度不高，
+			  如果使用的图片格式是png24，则会导致透明效果无法正常显示
+			 解决方法：
+			   1.可以使用png8来代替png24，既可以解决问题
+			        但是使用png8代替png24以后，图片的清晰度会有所下降
+			   2.使用Javascript来解决问题，需要向页面中引入一个外部的JavaScript文件  然后在写一下简单的js代码，来处理该问题
+		-->
+		<div class="box1">
+			
+		</div>
+		<div class="box2">
+			
+		</div>
+		<!--在body标签的最后引入外部的js文件-->
+		<script type="text/javascript" src="写上js代码的路径">
+			
+		</script>
+		<script type="text/javascript">
+			DD_belatedPNG.fix("div,img")
+		</script>
+	</body>
+</html>
